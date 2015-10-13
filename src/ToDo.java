@@ -19,7 +19,9 @@ public class ToDo {
                 if (todo.isDone){
                     checkBox = "[X]";
                 }
-                System.out.println(toDoNum + ". " + checkBox + " " + todo.text);
+                String line = String.format("%d. %s %s", toDoNum, checkBox, todo.text);
+                System.out.println(line);
+                //System.out.println(toDoNum + ". " + checkBox + " " + todo.text);
                 toDoNum++;
             }//End of for loop
 
